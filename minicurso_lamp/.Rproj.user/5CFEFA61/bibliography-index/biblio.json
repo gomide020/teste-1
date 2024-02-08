@@ -1,0 +1,60 @@
+{
+    "sources": [
+        {
+            "DOI": "10.1590/1984-70332021v21n2a30",
+            "URL": "http://dx.doi.org/10.1590/1984-70332021v21n2a30",
+            "author": [
+                {
+                    "family": "Zhang",
+                    "given": "Rong-Yue"
+                },
+                {
+                    "family": "Shan",
+                    "given": "Hong-Li"
+                },
+                {
+                    "family": "Yang",
+                    "given": "Kun"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Xiao-Yan"
+                },
+                {
+                    "family": "Cang",
+                    "given": "Xiao-Yan"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Chang-Mi"
+                },
+                {
+                    "family": "Luo",
+                    "given": "Zhi-Ming"
+                },
+                {
+                    "family": "Li",
+                    "given": "Wen-Feng"
+                },
+                {
+                    "family": "Huang",
+                    "given": "Ying-Kun"
+                }
+            ],
+            "container-title": "Crop Breeding and Applied Biotechnology",
+            "id": "zhang2021",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "Identification of brown rust resistance in the field and detection of the Bru1 gene in sugarcane varieties",
+            "type": "article-journal",
+            "volume": "21"
+        }
+    ],
+    "project_biblios": []
+}

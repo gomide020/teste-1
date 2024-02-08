@@ -1,0 +1,66 @@
+---
+title: "Dia 1"
+author: "Renato"
+format: html
+bibliography: references.bib
+---
+
+```{r}
+#| warning: false
+
+# esconde warning
+library(palmerpenguins)
+library(tidyverse)
+```
+
+Fizemos a leittura do arquivo bivar e carregamos pacotes
+
+```{r}
+#| echo: false
+
+#esconde script
+glimpse(penguins)
+```
+
+```{r}
+#| echo: false
+mutate_simples <- mutate(penguins,
+                         tamanho_nadadeira=
+                            if_else(flipper_length_mm > 200, "longa", "curta"))
+
+```
+
+```{r}
+#| eval: false
+nadadeira <- penguins |>
+      ### nova variável com base em condição
+      mutate(tamanho_nadadeira=
+               if_else(flipper_length_mm >200, "longa", "curta")) |> 
+      ### filtramos para amostras que são NA
+      filter(!is.na(tamanho_nadadeira)) |>
+      ### calculamos mediante DP para grupos
+      summarise(media_bico = mean(bill_length_mm),
+                desv_pad_bico= sd(bill_length_mm),
+                .by = tamanho_nadadeira)
+
+```
+
+```{r}
+bivariate_norm <- read.csv("bivariate.csv")
+
+head(bivariate_norm)
+```
+
+| Col1 | Col2 | Col3 | Col4 | Col5 | Col6 | Col7 | Col8 | Col9 | Col10 |
+|------|------|------|------|------|------|------|------|------|-------|
+|      |      |      | 2    |      |      |      |      |      |       |
+|      |      |      | 4    | 4    | 4    | x    | w    |      |       |
+|      |      |      | 5    | 4    |      | y    | z    |      |       |
+
+![](images/5-mamoeiro_lamina-03.jpeg){fig-align="center" width="270"}
+
+$$
+y=(x^2 +2)^2 / 5
+$$
+
+[@zhang2021]
